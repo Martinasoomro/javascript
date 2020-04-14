@@ -134,3 +134,91 @@ switch (number) {
 //-------------------------------------------------
 
 //HOMEWORK 2
+
+// 1. Write a calculator. Request 2 numbers and an operation as a symbol (+ - * /). 
+// The program solves it depending on the operation and shows the result.
+
+let numberOne = prompt('Write your first number!');
+let numberTwo = prompt('Write your second number!');
+
+Let operation = 
+prompt('Choose operation');
+
+switch(operation) {
+  case '+':
+    let answer = numberOne + numberTwo;
+    break;
+  case '-':
+    let answer = numberOne - numberTwo;
+    break;
+  case '*':
+    let answer = numberOne * numberTwo;
+    break:
+  case '/':
+    let answer = numberOne / numberTwo;
+    break:
+}
+
+alert answer;
+
+//OR
+
+let numberOne = prompt('Write your first number!');
+let numberTwo = prompt('Write your second number!');
+Let operation = prompt('Choose operation');
+
+if (operation == '+');
+alert (numberOne + numberTwo);
+else if (operation == '-');
+alert (numberOne - numberTwo);
+else if (operation == '*');
+alert (numberOne * numberTwo);
+else if (operation == '/');
+alert (numberOne / numberTwo);
+else alert ('Error');
+
+// 2. Count the factorial of the number given by a user. 
+// For example, 4! is 1 * 2 * 3 * 4 = 24, or 6! is 1 * 2 * 3 * 4 * 5 * 6 =  720.
+
+let number = prompt('Write a number you want to count the factorial of!');
+
+function countTheFactorial(number) {
+  if (number < 0)
+  return -1;
+  else if (number == 0)
+  return 1;
+  else {
+    return (number * countTheFactorial(number - 1));
+  }
+
+countTheFactorial(6);
+}
+
+// 3. Count sheep. Request a non-negative integer, 3 for example, and print a string with a murmur: 
+// "1 sheep...2 sheep...3 sheep..." to the page as a paragraph. If a user types a negative number in, 
+// alert an error.
+
+let number = prompt('Write a non-negative integer!');
+
+const countSheep = function(number) {
+  let result = '';
+  for (let i = 1; i <= number; i++) {
+    result += i.toString() + ' sheep...';
+  }
+  if (number <= 0)
+  return result;
+  else {
+    alert ('Error!');
+  }
+}
+
+// 4. Show a user the prompt where they have to write a correct answer for 2 + 2 * 2. 
+// Show the prompt as many times until the user answers correctly.
+
+let answer = prompt('Write the correct answer for 2 + 2 * 2');
+
+if (answer == 6)
+alert ('Correct!');
+else {
+  alert ('Incorrect!');
+}
