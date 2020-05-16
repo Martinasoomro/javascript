@@ -1,0 +1,18 @@
+{
+  "name": "homework200516",
+  "version": "1.0.0",
+  "description": "\u0016npm install --save-dev gulp",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  }
+}
